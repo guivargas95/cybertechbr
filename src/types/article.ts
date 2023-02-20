@@ -1,0 +1,15 @@
+export interface iArticle {
+    "id": number,
+    "type": string,
+    "title": string,
+    "category": string,
+    "date": string,
+    "p1": string,
+    "p2": string,
+    "img1": string,
+    "p3": string,
+    "p4": string,
+    "img2": string,
+    "p5": string,
+    "p6": string,
+}
