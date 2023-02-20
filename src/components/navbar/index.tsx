@@ -1,11 +1,12 @@
-export default function Navbar(){
-    return(
+import { Link } from "react-router-dom";
+
+export default function Navbar() {
+    return (
         <div>
-            <img className="w-44 mt-3 mb-3 mr-auto ml-auto" src="/img/cybertechbrasil.png" alt="" />
+            <Link to="/"><img className="w-44 mt-3 mb-3 mr-auto ml-auto" src="/img/cybertechbrasil.png" alt="" /></Link>
             <nav>
                 <ul className="flex justify-around mt-10 mb-10">
-                    <li></li>
-                    <li></li>
+                    <Link to="/"><li>Início</li></Link>
                 </ul>
             </nav>
         </div>
