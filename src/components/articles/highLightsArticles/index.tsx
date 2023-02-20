@@ -1,4 +1,5 @@
 import Data from "../data.json"
+import { Link } from "react-router-dom"
 
 export default function HighLightsArticles(props: any) {
     let id1 = props.id1
@@ -22,25 +23,19 @@ export default function HighLightsArticles(props: any) {
     })
 
 
-
-
     return (
         <section>
-
             <div className="border-t border-b border-gray-400 w-11/12 flex flex-col items-center content-center mr-auto ml-auto justify-center md:grid md:grid-cols-2 md:w-140">
                 {articleList?.map(response => {
                     return (
                         <div className="w-80 md:w-96 mt-3 mb-3 md:mt-1 md:mb-1 md:mr-auto md:ml-auto md:h-112" key={response.id}>
-                            <h2 className="text-xl text-center font-bold md:h-16">{response.title}</h2>
-                            <img className="w-full h-40" src={`${imgPath}/${response.img1}`} alt="" />
-                            <h3 className="text-blue-700 mt-2 mb-2">{response.category}</h3>
-                            <p className="text-left">{`${response.p1.substring(0,300)}...`}</p>
+                            <Link to={`/article/${response.id}`}><h2 className="text-xl text-center font-bold md:h-16 font-titles">{response.title}</h2></Link>
+                            <Link to={`/article/${response.id}`}><img className="w-full h-40" src={`${imgPath}/${response.img1}`} alt="" /></Link>
+                            <h3 className="text-blue-400 mt-2 mb-2 font-bold">{response.category}</h3>
+                            <p className="text-left font-texts font-bold text-sm">{`${response.p1.substring(0, 300)}...`}</p>
                         </div>
                     )
                 })}
-
-
-
             </div>
         </section>
     )
