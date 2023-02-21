@@ -19,7 +19,8 @@ export default function ArticlePage() {
                             return (
                                 <div className="w-10/12 md:w-6/12 mr-auto ml-auto border-t border-b border-gray-400">
                                     <h1 className="text-center mt-5 mb-5 text-2xl font-titles">{response.title}</h1>
-                                    <img className="lg:h-128 lg:w-150 mt-10 mb-10 md:mr-auto md:ml-auto" src={`${imgPath}/${response.img1}`} alt={response.alt1} />
+                                    <h2 className="mt-10 text-sm text-gray-400">Publicado em {response.date}</h2>
+                                    <img className="lg:h-128 lg:w-150 mb-10 md:mr-auto md:ml-auto" src={`${imgPath}/${response.img1}`} alt={response.alt1} />
                                     <div className="text-left font-texts font-bold">
                                         <p className="mt-2 mb-2 text-left font-texts font-bold">{response.p1}</p>
                                         <p className="mt-2 mb-2 text-left font-texts font-bold">{response.p2}</p>
@@ -41,7 +42,8 @@ export default function ArticlePage() {
                                     <div className="text-left font-texts font-bold">
                                         <p className="">{response.p1}</p>
                                     </div>
-                                    <img className="lg:h-128 lg:w-150 mt-10 mb-10 md:mr-auto md:ml-auto" src={`${imgPath}/${response.img1}`} alt={response.alt1} />
+                                    <h2 className="mt-10 text-sm text-gray-400">Publicado em {response.date}</h2>
+                                    <img className="lg:h-128 lg:w-150 mb-10 md:mr-auto md:ml-auto" src={`${imgPath}/${response.img1}`} alt={response.alt1} />
                                     <div>
                                         <div className="text-left font-texts font-bold">
                                             <p className="">{response.p2}</p>
