@@ -8,7 +8,7 @@ export default function HighLightsArticles(props: any) {
     let id4 = props.id4
     const data = Data.results
     const imgPath = "/img/articleImg/"
-    let articleList: { id: number; type: string; title: string; category: string; date: string; p1: string; p2: string; img1: string; p3: string; p4: string; img2: string; p5: string; p6: string; alt1: string }[] = []
+    let articleList: ({ id: number; type: string; title: string; category: string; date: string; p1: string; p2: string; img1: string; alt1: string; p3: string; p4: string; img2: string; alt2: string; p5: string; p6: string; tip1?: undefined; tip2?: undefined; tip3?: undefined; tip4?: undefined; tip5?: undefined; tip6?: undefined; tip7?: undefined; tip8?: undefined; tip9?: undefined; tip10?: undefined } | { id: number; type: string; title: string; category: string; date: string; p1: string; img1: string; alt1: string; tip1: string; tip2: string; tip3: string; tip4: string; tip5: string; tip6: string; tip7: string; tip8: string; tip9: string; tip10: string; p3: string; img2: string; alt2: string; p2?: undefined; p4?: undefined; p5?: undefined; p6?: undefined } | { id: number; type: string; title: string; category: string; date: string; p1: string; p2: string; img1: string; alt1: string; tip1: string; tip2: string; tip3: string; tip4: string; tip5: string; tip6: string; tip7: string; tip8: string; tip9: string; tip10: string; p3: string; img2: string; alt2: string; p4?: undefined; p5?: undefined; p6?: undefined })[] = []
     data?.map(response => {
         if (response.id === id1) { articleList?.push(response) }
     })
