@@ -21,15 +21,15 @@ export default function ArticlePage() {
                                     <h1 className="text-center mt-5 mb-5 text-2xl font-titles">{response.title}</h1>
                                     <img className="lg:h-128 lg:w-150 mt-10 mb-10 md:mr-auto md:ml-auto" src={`${imgPath}/${response.img1}`} alt={response.alt1} />
                                     <div className="text-left font-texts font-bold">
-                                        <p className="mt-2 mb-2">{response.p1}</p>
-                                        <p className="mt-2 mb-2">{response.p2}</p>
-                                        <p className="mt-2 mb-2">{response.p3}</p>
+                                        <p className="mt-2 mb-2 text-left font-texts font-bold">{response.p1}</p>
+                                        <p className="mt-2 mb-2 text-left font-texts font-bold">{response.p2}</p>
+                                        <p className="mt-2 mb-2 text-left font-texts font-bold">{response.p3}</p>
                                     </div>
                                     <img className="lg:h-128 lg:w-150 mt-10 mb-10 md:mr-auto md:ml-auto" src={`${imgPath}/${response.img2}`} alt={response.alt2} />
                                     <div className="text-left font-texts font-bold">
-                                        <p className="mt-2 mb-2">{response.p4}</p>
-                                        <p className="mt-2 mb-2">{response.p5}</p>
-                                        <p className="mt-2 mb-2">{response.p6}</p>
+                                        <p className="mt-2 mb-2 text-left font-texts font-bold">{response.p4}</p>
+                                        <p className="mt-2 mb-2 text-left font-texts font-bold">{response.p5}</p>
+                                        <p className="mt-2 mb-2 text-left font-texts font-bold">{response.p6}</p>
                                     </div>
                                 </div>
                             )
@@ -56,7 +56,7 @@ export default function ArticlePage() {
                                             <li>{response.tip10}</li>
                                         </ul>
                                         <div className="text-left font-texts font-bold">
-                                            <p className="mt-2 mb-2">{response.p3}</p>
+                                            <p className="mt-2 mb-2 text-left font-texts font-bold">{response.p3}</p>
                                         </div>
                                     </div>
                                 </div>
