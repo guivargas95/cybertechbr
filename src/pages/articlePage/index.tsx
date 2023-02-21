@@ -43,6 +43,9 @@ export default function ArticlePage() {
                                     </div>
                                     <img className="lg:h-128 lg:w-150 mt-10 mb-10 md:mr-auto md:ml-auto" src={`${imgPath}/${response.img1}`} alt={response.alt1} />
                                     <div>
+                                        <div className="text-left font-texts font-bold">
+                                            <p className="">{response.p2}</p>
+                                        </div>
                                         <ul className="text-left font-texts font-bold">
                                             <li className="mt-2 mb-2">{response.tip1}</li>
                                             <li className="mt-2 mb-2">{response.tip2}</li>

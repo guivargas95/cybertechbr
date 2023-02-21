@@ -9,7 +9,7 @@ export default function AllArticles() {
     return (
         <section className="mt-10">
             <div className="w-11/12 flex flex-col items-center content-center mr-auto ml-auto justify-center md:grid md:grid-cols-2 lg:grid-cols-3 lg:w-150">
-                {data.map(response => {
+                {data.slice(0).reverse().map(response => {
                     if (response.id != 1 && response.id != 2 && response.id != 3 && response.id != 4)
                         return (
                             <div className="w-80 md:w-96 mt-3 mb-3 md:mt-1 md:mb-1 md:mr-auto md:ml-auto md:h-112" key={response.id}>
