@@ -7,7 +7,7 @@ export default function Home() {
         <div>
             <Navbar />
             <h1 className="text-center text-3xl text-gray-500 mt-5 mb-5 font-bold">Artigos de tecnologia</h1>
-            <HighLightsArticles id1={4} id2={6} id3={7} id4={12}/>
+            <HighLightsArticles id1={15} id2={19} id3={20} id4={21}/>
             <AllArticles />
         </div>
     )

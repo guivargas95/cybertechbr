@@ -10,7 +10,7 @@ export default function AllArticles() {
         <section className="mt-10">
             <div className="w-11/12 flex flex-col items-center content-center mr-auto ml-auto justify-center md:grid md:grid-cols-2 lg:grid-cols-3 lg:w-150">
                 {data.slice(0).reverse().map(response => {
-                    if (response.id != 4 && response.id != 6 && response.id != 7 && response.id != 12)
+                    if (response.id != 15 && response.id != 19 && response.id != 20 && response.id != 21)
                         return (
                             <div className="w-80 md:w-96 mt-3 mb-3 md:mt-1 md:mb-1 md:mr-auto md:ml-auto md:h-112" key={response.id}>
                                 <Link to={`/article/${response.id}`}><h2 className="text-xl text-left font-bold md:h-16 font-titles">{response.title}</h2></Link>
