@@ -1,3 +1,4 @@
+import { Component } from "react";
 import { useLocation, useParams } from "react-router-dom"
 import AllArticles from "../../components/articles/allArticles";
 import Data from "../../components/articles/data.json"
@@ -19,6 +20,7 @@ export default function ArticlePage() {
                             return (
                                 <div className="w-10/12 md:w-6/12 mr-auto ml-auto border-t border-b border-gray-400">
                                     <h1 className="text-center mt-5 mb-5 text-2xl font-titles">{response.title}</h1>
+                                    <iframe src={"ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=BR&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=cybertechbr-20&language=pt_BR&marketplace=amazon&region=BR&placement=B0BQNXDG89&asins=B0BQNXDG89&linkId=d9e50750e4e6fe6ecdd02940c955c834&show_border=false&link_opens_in_new_window=true"} ></iframe>
                                     <h2 className="mt-10 text-sm text-gray-400">Publicado em {response.date}</h2>
                                     <img className="lg:h-128 lg:w-150 mb-10 md:mr-auto md:ml-auto" src={`${imgPath}/${response.img1}`} alt={response.alt1} />
                                     <div className="text-left font-texts font-bold">
@@ -26,6 +28,7 @@ export default function ArticlePage() {
                                         <p className="mt-2 mb-2 text-left font-texts font-bold">{response.p2}</p>
                                         <p className="mt-2 mb-2 text-left font-texts font-bold">{response.p3}</p>
                                     </div>
+
                                     <img className="lg:h-128 lg:w-150 mt-10 mb-10 md:mr-auto md:ml-auto" src={`${imgPath}/${response.img2}`} alt={response.alt2} />
                                     <div className="text-left font-texts font-bold">
                                         <p className="mt-2 mb-2 text-left font-texts font-bold">{response.p4}</p>
