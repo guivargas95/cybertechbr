@@ -90,7 +90,7 @@ export default function ArticlePage() {
                     <AmazonIframe ad1={"//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=BR&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=cybertechbr-20&language=pt_BR&marketplace=amazon&region=BR&placement=B099Y58F7Z&asins=B099Y58F7Z&linkId=a8ac4900afe0818c969db5bbc2584563&show_border=true&link_opens_in_new_window=true"} ad2={"//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=BR&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=cybertechbr-20&language=pt_BR&marketplace=amazon&region=BR&placement=B098R6D9B8&asins=B098R6D9B8&linkId=91bb1f36430188e82c0d101412ab85b6&show_border=true&link_opens_in_new_window=true"} ad3={"//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=BR&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=cybertechbr-20&language=pt_BR&marketplace=amazon&region=BR&placement=B08ZJWB8YV&asins=B08ZJWB8YV&linkId=a3a5353a583f5bfd36cbc4c3432cf4c5&show_border=true&link_opens_in_new_window=true"} />
                 </div>
                 <h2 className="text-center mt-20 mb-16 font-texts font-bold text-3xl">Veja também!</h2>
-                <AllArticles />
+                <AllArticles id1={parseInt(id || "")} id2={0} id3={0} id4={0}/>
             </section>
         </div>
     )
