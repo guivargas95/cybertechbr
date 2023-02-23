@@ -1,5 +1,5 @@
 import { Component } from "react";
-import { useLocation, useParams } from "react-router-dom"
+import { Link, useLocation, useParams } from "react-router-dom"
 import AmazonIframe from "../../components/amazonIframe";
 import AllArticles from "../../components/articles/allArticles";
 import Data from "../../components/articles/data.json"
@@ -14,12 +14,12 @@ export default function ArticlePage() {
     return (
         <div>
             <Navbar />
-            <section>
+            <section className="mt-32">
                 {data.map(response => {
                     if (response.id == parseInt(id || "")) {
                         if (response.type === "article") {
                             return (
-                                <div className="w-10/12 md:w-6/12 mr-auto ml-auto border-t border-b border-gray-400">
+                                <div className="w-10/12 md:w-6/12 mr-auto ml-auto border-t border-b border-gray-400" key={response.id}>
                                     <h1 className="text-center mt-5 mb-5 text-2xl font-titles">{response.title}</h1>
                                     <div className="flex justify-center mt-16">
                                         <AmazonIframe ad1={response.ad1} ad2={response.ad2} ad3={response.ad3} />
@@ -46,7 +46,7 @@ export default function ArticlePage() {
                         }
                         else {
                             return (
-                                <div className="w-10/12 md:w-6/12 mr-auto ml-auto border-t border-b border-gray-400">
+                                <div className="w-10/12 md:w-6/12 mr-auto ml-auto border-t border-b border-gray-400" key={response.id}>
                                     <h1 className="text-center mt-5 mb-5 text-2xl font-titles">{response.title}</h1>
                                     <div className="flex justify-center mt-16">
                                         <AmazonIframe ad1={response.ad1} ad2={response.ad2} ad3={response.ad3} />
@@ -85,14 +85,18 @@ export default function ArticlePage() {
                     }
                 })}
             </section>
+
+            <div className="flex justify-center mt-16">
+                <AmazonIframe
+                    ad1={"//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=BR&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=cybertechbr-20&language=pt_BR&marketplace=amazon&region=BR&placement=B09VCW5X56&asins=B09VCW5X56&linkId=0a9d9bb438ac8dc42fbc9c5394e86117&show_border=true&link_opens_in_new_window=true"}
+                    ad2={"//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=BR&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=cybertechbr-20&language=pt_BR&marketplace=amazon&region=BR&placement=B094Z7HFM5&asins=B094Z7HFM5&linkId=16cedcc22473611093b2e4962e7f107a&show_border=true&link_opens_in_new_window=true"}
+                    ad3={"//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=BR&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=cybertechbr-20&language=pt_BR&marketplace=amazon&region=BR&placement=B08ZJWB8YV&asins=B08ZJWB8YV&linkId=a3a5353a583f5bfd36cbc4c3432cf4c5&show_border=true&link_opens_in_new_window=true"}
+                />
+            </div>
+            <div>
+            <Link to="/"><button>a<img src="" alt="" /></button></Link>
+            </div>
             <section>
-                <div className="flex justify-center mt-16">
-                    <AmazonIframe
-                        ad1={"//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=BR&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=cybertechbr-20&language=pt_BR&marketplace=amazon&region=BR&placement=B09VCW5X56&asins=B09VCW5X56&linkId=0a9d9bb438ac8dc42fbc9c5394e86117&show_border=true&link_opens_in_new_window=true"}
-                        ad2={"//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=BR&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=cybertechbr-20&language=pt_BR&marketplace=amazon&region=BR&placement=B094Z7HFM5&asins=B094Z7HFM5&linkId=16cedcc22473611093b2e4962e7f107a&show_border=true&link_opens_in_new_window=true"}
-                        ad3={"//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=BR&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=cybertechbr-20&language=pt_BR&marketplace=amazon&region=BR&placement=B08ZJWB8YV&asins=B08ZJWB8YV&linkId=a3a5353a583f5bfd36cbc4c3432cf4c5&show_border=true&link_opens_in_new_window=true"}
-                    />
-                </div>
                 <h2 className="text-center mt-20 mb-16 font-texts font-bold text-3xl">Veja também!</h2>
                 <AllArticles id1={parseInt(id || "")} id2={0} id3={0} id4={0} />
             </section>
