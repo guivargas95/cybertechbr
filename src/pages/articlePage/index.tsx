@@ -93,9 +93,6 @@ export default function ArticlePage() {
                     ad3={"//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=BR&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=cybertechbr-20&language=pt_BR&marketplace=amazon&region=BR&placement=B08ZJWB8YV&asins=B08ZJWB8YV&linkId=a3a5353a583f5bfd36cbc4c3432cf4c5&show_border=true&link_opens_in_new_window=true"}
                 />
             </div>
-            <div>
-            <Link to="/"><button>a<img src="" alt="" /></button></Link>
-            </div>
             <section>
                 <h2 className="text-center mt-20 mb-16 font-texts font-bold text-3xl">Veja também!</h2>
                 <AllArticles id1={parseInt(id || "")} id2={0} id3={0} id4={0} />
