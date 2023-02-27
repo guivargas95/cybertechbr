@@ -703,6 +703,29 @@
             "ad4": "//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=BR&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=cybertechbr-20&language=pt_BR&marketplace=amazon&region=BR&placement=B0BDHTM2P3&asins=B0BDHTM2P3&linkId=a529ca13983619cdfbaa421a289fc938&show_border=true&link_opens_in_new_window=true",
             "ad5": "//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=BR&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=cybertechbr-20&language=pt_BR&marketplace=amazon&region=BR&placement=B0BDJGM71C&asins=B0BDJGM71C&linkId=003dfcfb76356ee428f997032341dbd6&show_border=true&link_opens_in_new_window=true",
             "ad6": "//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=BR&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=cybertechbr-20&language=pt_BR&marketplace=amazon&region=BR&placement=B089NS9JW2&asins=B089NS9JW2&linkId=7bd392ea8017ca98b180aff83e55f161&show_border=true&link_opens_in_new_window=true"
+        },
+        {
+            "id": 28,
+            "type": "article",
+            "title": "Vale a pena trabalhar na área de tecnologia em 2023?",
+            "category": "Tecnologia",
+            "date": "20-02-2023",
+            "p1": "A área de tecnologia oferece muitas oportunidades de emprego para profissionais com diferentes níveis de habilidades e experiência, desde desenvolvedores de software e engenheiros de dados até designers de interface do usuário e especialistas em segurança da informação. Além disso, a demanda por talentos na área de tecnologia tem crescido significativamente nos últimos anos, o que pode levar a salários competitivos e oportunidades de crescimento profissional.",
+            "p2": "Os salários de programadores no Brasil podem variar significativamente dependendo do nível de experiência, localização geográfica e setor de atuação. Em geral, programadores experientes em grandes cidades como São Paulo, Rio de Janeiro e Brasília podem ganhar salários bastante competitivos em relação a outras profissões e setores do mercado.",
+            "img1": "28-1.webp",
+            "alt1": "Desenvolvedor de software",
+            "p3": "No entanto, é importante lembrar que o custo de vida nessas cidades também pode ser alto, o que pode afetar a qualidade de vida dos profissionais e diminuir o poder de compra do salário. Além disso, em outras regiões do país, os salários de programadores podem ser menos competitivos. Atualmente existe uma solução para este problema: O tão falado Home-Office. O home-office pode ter um impacto significativo nos salários de programadores no Brasil, principalmente em relação à localização geográfica. Com o trabalho remoto, profissionais podem ser contratados por empresas que estejam localizadas em outras regiões do país, ou mesmo em outros países, sem precisar se mudar.",
+            "p4": "Além disso, o home-office pode afetar a qualidade de vida do profissional de outras maneiras, como reduzindo custos de transporte, alimentação e moradia. Isso pode compensar salários menores em algumas situações, permitindo que o profissional tenha um padrão de vida adequado.",
+            "img2": "28-2.webp",
+            "alt2": "Desenvolvedor trabalhando",
+            "ad1": "",
+            "ad2": "",
+            "ad3": "",
+            "ad4": "",
+            "ad5": "",
+            "ad6": "",
+            "p5": "Trabalhar na área de tecnologia pode ser uma ótima opção para muitas pessoas, especialmente aquelas que gostam de solucionar problemas, têm interesse em inovação e querem trabalhar em um setor que está em constante crescimento e evolução.",
+            "p6": "No geral, o setor de tecnologia tem crescido rapidamente no Brasil e apresenta muitas oportunidades de carreira para programadores. É importante que os profissionais pesquisem e comparem salários e oportunidades em diferentes empresas e regiões para avaliar se a remuneração é adequada às suas necessidades e expectativas."
         }
     ]
 }
