@@ -25,7 +25,7 @@ export default function HighLightsArticles(props: any) {
 
     return (
         <section>
-            <div className="border-t border-b border-gray-400 w-11/12 flex flex-col items-center content-center mr-auto ml-auto justify-center md:grid md:grid-cols-2 md:w-140">
+            <article className="border-t border-b border-gray-400 w-11/12 flex flex-col items-center content-center mr-auto ml-auto justify-center md:grid md:grid-cols-2 md:w-140">
                 {articleList?.map(response => {
                     return (
                         <div className="w-80 md:w-96 mt-3 mb-3 md:mt-1 md:mb-1 md:mr-auto md:ml-auto md:h-112" key={response.id}>
@@ -36,7 +36,7 @@ export default function HighLightsArticles(props: any) {
                         </div>
                     )
                 })}
-            </div>
+            </article>
         </section>
     )
 }
