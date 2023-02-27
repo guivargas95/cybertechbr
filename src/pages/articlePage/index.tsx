@@ -3,6 +3,7 @@ import { Link, useLocation, useParams } from "react-router-dom"
 import AmazonIframe from "../../components/amazonIframe";
 import AllArticles from "../../components/articles/allArticles";
 import Data from "../../components/articles/data.json"
+import Footer from "../../components/footer";
 import Navbar from "../../components/navbar";
 
 export default function ArticlePage() {
@@ -97,6 +98,7 @@ export default function ArticlePage() {
                 <h2 className="text-center mt-20 mb-16 font-texts font-bold text-3xl">Veja também!</h2>
                 <AllArticles id1={parseInt(id || "")} id2={0} id3={0} id4={0} />
             </section>
+            <Footer />
         </div>
     )
 }
