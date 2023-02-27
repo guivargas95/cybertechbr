@@ -22,7 +22,7 @@ export default function Privacy() {
                 <p className="mt-2 mb-2">A Cyber Tech Brasil não coleta ou armazena dados pessoais de seus usuários. Ademais, caso ocorram alterações em relação à utilização dos dados de seus clientes ou usuários, todas as medidas serão tomadas seguindo a regulamentação da LGPD.</p>
                 <h3 className="text-xl font-bold mt-6 mb-6">5. MODIFICAÇÃO DA POLÍTICA DE PRIVACIDADE</h3>
                 <p className="mt-2 mb-2">A Cyber Tech Brasil poderá, a qualquer momento, modificar alterar ou substituir a Política de Privacidade.</p>
-                <p className="mt-2 mb-2">A política de privacidade foi atualizada e revisada no dia 27 de dezembro de 2023.</p>
+                <p className="mt-2 mb-2">A política de privacidade foi atualizada e revisada no dia 27 de fevereiro de 2023.</p>
                 <h3 className="text-xl font-bold mt-6 mb-6">6. INFORMAÇÕES PARA CONTATO EM CASO DE DÚVIDAS</h3>
                 <p className="mt-2 mb-2">Contato do encarregado de dados: guisouzavargas@outlook.com.</p>
             </section>
