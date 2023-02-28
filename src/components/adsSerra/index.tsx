@@ -1,12 +1,12 @@
 import { useEffect, useRef } from 'react'
-export default function TopAdsTerra(): JSX.Element {
+export default function AdsTerra(props: any): JSX.Element {
 
     const adsTerra = useRef<HTMLDivElement>(null)
     const atOptions = {
-        key: 'e9670801a8a590e51e3ab8032918fd84',
+        key: props.keyAd,
         format: 'iframe',
-        height: 90,
-        width: 728,
+        height: props.height,
+        width: props.width,
         params: {},
     }
 

@@ -1,4 +1,4 @@
-import { Component } from "react";
+import AdsTerra from "../../components/adsSerra";
 import { Link, useLocation, useParams } from "react-router-dom"
 import AmazonIframe from "../../components/amazonIframe";
 import AllArticles from "../../components/articles/allArticles";
@@ -22,9 +22,10 @@ export default function ArticlePage() {
                             return (
                                 <div className="w-10/12 md:w-6/12 mr-auto ml-auto border-t border-b border-gray-400" key={response.id}>
                                     <h1 className="text-center mt-5 mb-5 text-2xl font-titles">{response.title}</h1>
+                                    <AdsTerra keyAd={'24107d1def2ec2c40f0692c35b9df416'} width={468} height={60} />
                                     <h2 className="mt-10 text-sm text-gray-400">Publicado em {response.date}</h2>
                                     <img className="lg:h-128 lg:w-150 mb-10 md:mr-auto md:ml-auto" src={`${imgPath}/${response.img1}`} alt={response.alt1} />
-                                    <div className="flex justify-center mt-6 mb-6">
+                                    <div className="flex justify-center mb-6">
                                         <AmazonIframe ad1={response.ad1} ad2={response.ad2} ad3={response.ad3} />
                                     </div>
                                     <div className="text-left font-texts font-bold">
@@ -49,7 +50,8 @@ export default function ArticlePage() {
                             return (
                                 <div className="w-10/12 md:w-6/12 mr-auto ml-auto border-t border-b border-gray-400" key={response.id}>
                                     <h1 className="text-center mt-5 mb-5 text-2xl font-titles">{response.title}</h1>
-                                    <div className="flex justify-center mt-16">
+                                    <AdsTerra keyAd={'24107d1def2ec2c40f0692c35b9df416'} width={468} height={60} />
+                                    <div className="flex justify-center">
                                         <AmazonIframe ad1={response.ad1} ad2={response.ad2} ad3={response.ad3} />
                                     </div>
                                     <div className="mt-5 text-left font-texts font-bold">
