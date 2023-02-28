@@ -1,12 +1,12 @@
 import { useEffect, useRef } from 'react'
-export default function AdsSerra(): JSX.Element {
+export default function TopAdsTerra(): JSX.Element {
 
     const adsTerra = useRef<HTMLDivElement>(null)
     const atOptions = {
-        key: '63d2ae3470ce030358178c5721040be3',
+        key: 'e9670801a8a590e51e3ab8032918fd84',
         format: 'iframe',
-        height: 250,
-        width: 300,
+        height: 90,
+        width: 728,
         params: {},
     }
 
@@ -26,6 +26,6 @@ export default function AdsSerra(): JSX.Element {
     }, [])
 
     return (
-        <div ref={adsTerra}></div>
+        <div className='flex justify-center mb-10 mt-10' ref={adsTerra}></div>
     )
 }
