@@ -6,6 +6,9 @@ import ArticlePage from './pages/articlePage';
 import Home from './pages/home';
 import ScrollToTop from './components/scrollToTop';
 import Privacy from './pages/privacy';
+import posthog from 'posthog-js'
+
+posthog.init('phc_h7cAp2F62c6KZqTMmYK0nnYuOGK3kCfhcoXpgkdTT7s', { api_host: 'https://app.posthog.com' })
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
