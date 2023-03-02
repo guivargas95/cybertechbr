@@ -12,7 +12,7 @@ export default function Home() {
 
 
     return (
-        <div className="mt-32">
+        <div className="mt-48">
             <Navbar />
             <h1 className="text-center text-3xl text-gray-500 mt-5 mb-5 font-bold">Artigos e as melhores dicas para você!</h1>
             <AdsTerra keyAd={'24107d1def2ec2c40f0692c35b9df416'} width={468} height={60} />
