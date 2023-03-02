@@ -20,8 +20,8 @@ module.exports = {
             },
         },
         fontFamily: {
-            texts: ['Inter', 'sans-serif'],
-            titles: ['Gloock', 'serif'],
+            texts: ['Roboto', 'sans-serif'],
+            titles: ['Open Sans', 'sans-serif'],
         },
     },
     plugins: [],
