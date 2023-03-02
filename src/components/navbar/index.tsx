@@ -15,9 +15,9 @@ export default function Navbar() {
                     </div>
                 </div>
                 <ul className="flex justify-center mt-5 text-xl">
-                    <Link to="/category/Tecnologia"><li className="ml-5 mr-5">Tecnologia</li></Link>
-                    <Link to="/category/Saúde"><li className="ml-5 mr-5">Saúde</li></Link>
-                    <Link to="/category/Meio%20Ambiente"><li className="ml-5 mr-5">Meio Ambiente</li></Link>
+                    <Link to="/category/Tecnologia"><li className="ml-2 mr-2">Tecnologia</li></Link>
+                    <Link to="/category/Saúde"><li className="ml-2 mr-2">Saúde</li></Link>
+                    <Link to="/category/Meio%20Ambiente"><li className="ml-2 mr-2">Meio Ambiente</li></Link>
                 </ul>
             </nav>
 
