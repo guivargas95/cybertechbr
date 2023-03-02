@@ -12,13 +12,12 @@ export default function AllArticles({ id1, id2, id3, id4 }: iArticleId) {
 
     function loadMoreContent() {
         setCountArticles(countArticles + 6)
-        console.log(data.length)
     }
 
     return (
         <section className="mt-10">
             <article className="w-11/12 flex flex-col items-center content-center mr-auto ml-auto justify-center md:grid md:grid-cols-2 lg:grid-cols-3 lg:w-150">
-                {data.slice(0).reverse().map((response, index) => {
+                {data.slice(0).reverse().map((response) => {
 
 
                     if (response.id != id1 && response.id != id2 && response.id != id3 && response.id != id4 && countNumber < countArticles) {
