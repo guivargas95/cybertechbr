@@ -3,7 +3,7 @@ import Navbar from "../../components/navbar"
 
 export default function Privacy() {
     return (
-        <div className="mt-36">
+        <div className="mt-48">
             <Navbar />
             <section className="w-3/4 md:w-1/2 mr-auto ml-auto justify-center text-left">
                 <h1 className="text-center font-bold text-3xl mb-10">Políticas de Privacidade</h1>

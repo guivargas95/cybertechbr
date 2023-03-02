@@ -17,7 +17,7 @@ export default function ArticlePage() {
     return (
         <div>
             <Navbar />
-            <section className="mt-32">
+            <section className="mt-48">
                 {data.map(response => {
                     if (response.id == parseInt(id || "")) {
                         if (response.type === "article") {
