@@ -1,4 +1,4 @@
-import AdsTerra from "../../components/adsSerra";
+import AdsTerra from "../../components/adsTerra";
 import { Link, useLocation, useParams } from "react-router-dom"
 import AmazonIframe from "../../components/amazonIframe";
 import AllArticles from "../../components/articles/allArticles";

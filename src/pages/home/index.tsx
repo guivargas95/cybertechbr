@@ -1,4 +1,4 @@
-import AdsTerra from "../../components/adsSerra";
+import AdsTerra from "../../components/adsTerra";
 import AllArticles from "../../components/articles/allArticles";
 import HighLightsArticles from "../../components/articles/highLightsArticles";
 import CookiePolicyBanner from "../../components/cookiePolicyBanner";

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useParams } from "react-router-dom";
-import AdsTerra from "../../adsSerra";
+import AdsTerra from "../../adsTerra";
 import Data from "../data.json"
 
 export default function CategoryArticles() {
