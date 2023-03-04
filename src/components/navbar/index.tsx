@@ -14,10 +14,10 @@ export default function Navbar() {
                         </ul>
                     </div>
                 </div>
-                <ul className="flex justify-center mt-5 text-xl">
-                    <Link to="/category/Tecnologia"><li className="ml-2 mr-2">Tecnologia</li></Link>
-                    <Link to="/category/Saúde"><li className="ml-2 mr-2">Saúde</li></Link>
-                    <Link to="/category/Meio%20Ambiente"><li className="ml-2 mr-2">Meio Ambiente</li></Link>
+                <ul className=" text-white rounded-lg flex justify-center mt-5 text-lg font-titles">
+                    <li className="bg-black rounded-lg ml-2 mr-2 hover:text-blue-800"><Link to="/category/Tecnologia">Tecnologia</Link></li>
+                    <li className="bg-black rounded-lg ml-2 mr-2 hover:text-blue-800"><Link to="/category/Saúde">Saúde</Link></li>
+                    <li className="bg-black rounded-lg ml-2 mr-2 hover:text-blue-800"><Link to="/category/Meio%20Ambiente">Meio Ambiente</Link></li>
                 </ul>
             </nav>
 
