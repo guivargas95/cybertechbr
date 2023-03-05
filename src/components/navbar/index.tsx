@@ -12,7 +12,6 @@ export default function Navbar() {
         if (showMenu == false) {
             setShowMenu(true)
         }
-        console.log(self.innerWidth)
     }
 
     function hideMenu() {
