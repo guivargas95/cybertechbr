@@ -1,7 +1,7 @@
-import { useEffect, useRef } from 'react'
-export default function AdsTerra(props: any): JSX.Element {
+import { useEffect, useRef } from 'react';
 
-    const adsTerra = useRef<HTMLDivElement>(null)
+export default function AdsTerra(props: any) {
+    const adsTerra = useRef<HTMLDivElement | null>(null)
     const atOptions = {
         key: props.keyAd,
         format: 'iframe',
@@ -12,20 +12,21 @@ export default function AdsTerra(props: any): JSX.Element {
 
     useEffect(() => {
         if (!adsTerra.current?.firstChild) {
-            const conf = document.createElement('script')
-            const script = document.createElement('script')
-            script.type = 'text/javascript'
-            script.src = `https://www.effectivecreativeformat.com/${atOptions.key}/invoke.js`
-            conf.innerHTML = `atOptions = ${JSON.stringify(atOptions)}`
-
+            const conf = document.createElement('script');
+            const script = document.createElement('script');
+            script.type = 'text/javascript';
+            script.src = `//www.profitabledisplaynetwork.com/${atOptions.key}/invoke.js`;
+            conf.innerHTML = `var atOptions = ${JSON.stringify(atOptions)}`;
             if (adsTerra.current) {
-                adsTerra.current.append(conf)
-                adsTerra.current.append(script)
+                adsTerra.current.appendChild(conf);
+                adsTerra.current.appendChild(script);
             }
         }
-    }, [])
+
+    }, []);
 
     return (
-        <div className='flex justify-center mb-10 mt-10' ref={adsTerra}></div>
-    )
+    <div className='flex justify-center mt-10 mb-10 ml-2 mr-2' ref={(node) => (adsTerra.current = node)} />
+
+    );
 }

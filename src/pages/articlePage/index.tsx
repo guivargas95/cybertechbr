@@ -1,12 +1,11 @@
-import AdsTerra from "../../components/adsTerra";
 import { Link, useLocation, useParams } from "react-router-dom"
-import AmazonIframe from "../../components/amazonIframe";
 import AllArticles from "../../components/articles/allArticles";
 import Data from "../../components/articles/data.json"
 import Footer from "../../components/footer";
 import Navbar from "../../components/navbar";
 import posthog from "posthog-js";
 import CookiePolicyBanner from "../../components/cookiePolicyBanner";
+import AdsTerraComponent from "../../components/adsTerra/adsTerraComponent";
 
 export default function ArticlePage() {
 
@@ -24,22 +23,18 @@ export default function ArticlePage() {
                             return (
                                 <div className="w-10/12 md:w-6/12 mr-auto ml-auto border-t border-b border-gray-400" key={response.id}>
                                     <h1 className="text-center mt-5 mb-5 text-3xl font-titles">{response.title}</h1>
-                                    <AdsTerra keyAd={'24107d1def2ec2c40f0692c35b9df416'} width={468} height={60} />
+                                    <AdsTerraComponent />
                                     <h2 className="mt-10 text-sm text-gray-400">Publicado em {response.date}</h2>
                                     <img className="lg:h-128 lg:w-150 mb-10 md:mr-auto md:ml-auto" src={`${imgPath}/${response.img1}`} alt={response.alt1} />
-                                    <div className="flex justify-center mb-6">
-                                        <AmazonIframe ad1={response.ad1} ad2={response.ad2} ad3={response.ad3} />
-                                    </div>
                                     <div className="text-left font-texts font-bold text-lg">
                                         <p className="mt-2 mb-2 text-left font-texts font-bold text-lg">{response.p1}</p>
                                         <p className="mt-2 mb-2 text-left font-texts font-bold text-lg">{response.p2}</p>
+                                        <AdsTerraComponent />
                                         <p className="mt-2 mb-2 text-left font-texts font-bold text-lg">{response.p3}</p>
                                     </div>
 
                                     <img className="lg:h-128 lg:w-150 mt-10 mb-10 md:mr-auto md:ml-auto" src={`${imgPath}/${response.img2}`} alt={response.alt2} />
-                                    <div className="flex justify-center mt-16 mb-16">
-                                        <AmazonIframe ad1={response.ad4} ad2={response.ad5} ad3={response.ad6} />
-                                    </div>
+                                    <AdsTerraComponent />
                                     <div className="text-left font-texts font-bold text-lg">
                                         <p className="mt-2 mb-2 text-left font-texts font-bold text-lg">{response.p4}</p>
                                         <p className="mt-2 mb-2 text-left font-texts font-bold text-lg">{response.p5}</p>
@@ -52,10 +47,7 @@ export default function ArticlePage() {
                             return (
                                 <div className="w-10/12 md:w-6/12 mr-auto ml-auto border-t border-b border-gray-400" key={response.id}>
                                     <h1 className="text-center mt-5 mb-5 text-3xl font-titles">{response.title}</h1>
-                                    <AdsTerra keyAd={'24107d1def2ec2c40f0692c35b9df416'} width={468} height={60} />
-                                    <div className="flex justify-center">
-                                        <AmazonIframe ad1={response.ad1} ad2={response.ad2} ad3={response.ad3} />
-                                    </div>
+                                    <AdsTerraComponent />
                                     <div className="mt-5 text-left font-texts font-bold text-lg">
                                         <p className="">{response.p1}</p>
                                     </div>
@@ -69,9 +61,7 @@ export default function ArticlePage() {
                                             <li className="mt-2 mb-2">{response.tip1}</li>
                                             <li className="mt-2 mb-2">{response.tip2}</li>
                                             <li className="mt-2 mb-2">{response.tip3}</li>
-                                            <div className="flex justify-center mt-16 mb-16">
-                                                <AmazonIframe ad1={response.ad4} ad2={response.ad5} ad3={response.ad6} />
-                                            </div>
+                                            <AdsTerraComponent />
                                             <li className="mt-2 mb-2">{response.tip4}</li>
                                             <li className="mt-2 mb-2">{response.tip5}</li>
                                             <li className="mt-2 mb-2">{response.tip6}</li>
@@ -90,19 +80,13 @@ export default function ArticlePage() {
                     }
                 })}
             </section>
-
-            <div className="flex justify-center mt-16">
-                <AmazonIframe
-                    ad1={"//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=BR&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=cybertechbr-20&language=pt_BR&marketplace=amazon&region=BR&placement=B09VCW5X56&asins=B09VCW5X56&linkId=0a9d9bb438ac8dc42fbc9c5394e86117&show_border=true&link_opens_in_new_window=true"}
-                    ad2={"//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=BR&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=cybertechbr-20&language=pt_BR&marketplace=amazon&region=BR&placement=B094Z7HFM5&asins=B094Z7HFM5&linkId=16cedcc22473611093b2e4962e7f107a&show_border=true&link_opens_in_new_window=true"}
-                    ad3={"//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=BR&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=cybertechbr-20&language=pt_BR&marketplace=amazon&region=BR&placement=B08ZJWB8YV&asins=B08ZJWB8YV&linkId=a3a5353a583f5bfd36cbc4c3432cf4c5&show_border=true&link_opens_in_new_window=true"}
-                />
-            </div>
+            <AdsTerraComponent />
             <section>
                 <h2 className="text-center mt-20 mb-16 font-texts font-bold text-3xl">Veja também!</h2>
                 <AllArticles id1={parseInt(id || "")} id2={0} id3={0} id4={0} />
             </section>
-            {posthog.has_opted_in_capturing() || posthog.has_opted_out_capturing() ? null: <CookiePolicyBanner />}
+            {posthog.has_opted_in_capturing() || posthog.has_opted_out_capturing() ? null : <CookiePolicyBanner />}
+            <AdsTerraComponent />
             <Footer />
         </div>
     )
