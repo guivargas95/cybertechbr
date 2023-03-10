@@ -36,7 +36,7 @@ export default function Navbar() {
                     <div className="">
                         <ul className="mt-3 mb-3 flex flex-col">
                             <li className="text-center font-titles font-bold text-lg hover:text-gray-700"><Link to="/">Início</Link></li>
-                            <li className="md:hidden"><button onClick={changeMenuOption}><img src="/img/menu.png" alt="Imagem de abertura de menu" /></button></li>
+                            <li className="md:hidden"><button onClick={changeMenuOption}><img src="/img/menu.png" alt="abrir menu" /></button></li>
                         </ul>
                     </div>
                 </div>
