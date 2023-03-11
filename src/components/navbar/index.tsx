@@ -45,9 +45,9 @@ export default function Navbar() {
                 <div className="bg-blue-900 font-texts font-bold text-white w-1/2 h-full fixed left-0 top-32 rounded-3xl md:w-full md:h-12">
                     <h3 className="mt-10 text-center text-2xl md:hidden md:mt-0">Categorias</h3>
                     <ul className="mt-10 flex-col flex items-start md:flex-row md:justify-center md:mt-2">
-                        <li className="mt-4 ml-2 mr-2 md:ml-10 md:mr-10 md:mt-0 hover:text-blue-800"><Link to="/category/Tecnologia" onClick={hideMenu}>Tecnologia</Link></li>
-                        <li className="mt-4 ml-2 mr-2 md:ml-10 md:mr-10 md:mt-0 hover:text-blue-800"><Link to="/category/Saúde" onClick={hideMenu}>Saúde</Link></li>
-                        <li className="mt-4 ml-2 mr-2 md:ml-10 md:mr-10 md:mt-0 hover:text-blue-800"><Link to="/category/Meio%20Ambiente" onClick={hideMenu}>Meio Ambiente</Link></li>
+                        <li className="mt-5 ml-2 mr-2 md:ml-10 md:mr-10 md:mt-0 hover:text-blue-800"><Link to="/category/Tecnologia" onClick={hideMenu}>Tecnologia</Link></li>
+                        <li className="mt-5 ml-2 mr-2 md:ml-10 md:mr-10 md:mt-0 hover:text-blue-800"><Link to="/category/Saúde" onClick={hideMenu}>Saúde</Link></li>
+                        <li className="mt-5 ml-2 mr-2 md:ml-10 md:mr-10 md:mt-0 hover:text-blue-800"><Link to="/category/Meio%20Ambiente" onClick={hideMenu}>Meio Ambiente</Link></li>
                     </ul>
                 </div>
             )}
