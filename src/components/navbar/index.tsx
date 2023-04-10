@@ -28,7 +28,7 @@ export default function Navbar() {
 
     return (
         <div>
-            <nav className="bg-blue-500 p-2 mt-0 fixed w-full z-10 top-0 md:h-32">
+            <nav className="bg-blue-500 p-2 mt-0 fixed w-full z-10 top-0 md:h-20">
                 <div className="md:flex md:justify-around">
                     <div className="text-white font-extrabold">
                         <Link to="/"><img className="w-40 h-16 mr-auto ml-auto" src="/img/cybertechbrasil.png" alt="Logo da CyberTech Brasil" /></Link>
@@ -42,7 +42,7 @@ export default function Navbar() {
                 </div>
             </nav>
             {showMenu == true && (
-                <div className="bg-blue-900 font-texts font-bold text-white w-1/2 h-full fixed left-0 top-32 rounded-3xl md:w-full md:h-12">
+                <div className="bg-blue-900 font-texts font-bold text-white w-1/2 h-full fixed left-0 top-20 rounded-3xl md:w-full md:h-12">
                     <h3 className="mt-10 text-center text-2xl md:hidden md:mt-0">Categorias</h3>
                     <ul className="mt-10 flex-col flex items-start md:flex-row md:justify-center md:mt-2">
                         <li className="mt-5 ml-2 mr-2 md:ml-10 md:mr-10 md:mt-0 hover:text-blue-800"><Link to="/category/Tecnologia" onClick={hideMenu}>Tecnologia</Link></li>
