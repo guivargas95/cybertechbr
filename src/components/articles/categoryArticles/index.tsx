@@ -1,7 +1,5 @@
 import { useState } from "react";
 import { Link, useParams } from "react-router-dom";
-import AdsTerra from "../../adsTerra";
-import AdsTerraComponent from "../../adsTerra/adsTerraComponent";
 import Data from "../data.json"
 
 export default function CategoryArticles() {
@@ -19,7 +17,6 @@ export default function CategoryArticles() {
     return (
         <section className="mt-48">
             <h1 className="text-center text-3xl font-titles fomnt-bold mb-6 mt-6">{category}</h1>
-            <AdsTerraComponent />
             <article className="w-11/12 flex flex-col items-center content-center mr-auto ml-auto justify-center md:grid md:grid-cols-2 lg:grid-cols-3 lg:w-150">
                 {data.slice(0).reverse().map((response) => {
                     if (response.category == category) {

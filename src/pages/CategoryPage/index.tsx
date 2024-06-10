@@ -1,6 +1,4 @@
 import posthog from "posthog-js";
-import AdsTerra from "../../components/adsTerra";
-import AdsTerraComponent from "../../components/adsTerra/adsTerraComponent";
 import CategoryArticles from "../../components/articles/categoryArticles";
 import CookiePolicyBanner from "../../components/cookiePolicyBanner";
 import Footer from "../../components/footer";
@@ -14,7 +12,6 @@ export default function CategoryPage() {
             <Navbar />
             <CategoryArticles />
             {posthog.has_opted_in_capturing() || posthog.has_opted_out_capturing() ? null : <CookiePolicyBanner />}
-            <AdsTerraComponent />
             <Footer />
         </div>
     )
