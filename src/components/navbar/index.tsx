@@ -31,12 +31,12 @@ export default function Navbar() {
             <nav className="bg-blue-500 p-2 mt-0 fixed w-full z-10 top-0 md:h-20">
                 <div className="md:flex md:justify-around">
                     <div className="text-white font-extrabold">
-                        <Link to="/"><img className="w-40 h-16 mr-auto ml-auto" src="/img/cybertechbrasil.png" alt="Logo da CyberTech Brasil" /></Link>
+                        <Link to="/"><img className="w-28 h-8 mr-auto ml-auto" src="/img/cybertechbrasil.png" alt="Logo da CyberTech Brasil" /></Link>
                     </div>
                     <div className="">
-                        <ul className="mt-3 mb-3 flex flex-col">
+                        <ul className="mt-21mb-3 flex justify-around">
+                            <li className="md:hidden"><button onClick={changeMenuOption}><img className="h-3" src="/img/menu.png" alt="abrir menu" /></button></li>
                             <li className="text-center font-titles font-bold text-lg hover:text-gray-700"><Link to="/">Início</Link></li>
-                            <li className="md:hidden"><button onClick={changeMenuOption}><img src="/img/menu.png" alt="abrir menu" /></button></li>
                         </ul>
                     </div>
                 </div>

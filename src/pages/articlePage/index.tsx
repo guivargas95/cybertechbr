@@ -40,10 +40,77 @@ export default function ArticlePage() {
                                 </div>
                             )
                         }
+                        else if (response.type === "top5") {
+                            if (response.products) {
+                                const produtosArray = Object.values(response.products);
+
+                                return (
+                                    <div className="w-10/12 md:w-6/12 mr-auto ml-auto border-t border-b border-gray-400" key={response.id}>
+                                        <h2 className="mt-10 text-sm text-gray-400">Publicado em {response.date}</h2>
+                                        <h1 className="text-center mt-5 mb-5 text-3xl font-titles">{response.title}</h1>
+                                        <div className="mt-5 text-left font-texts font-bold text-lg">
+
+                                            {produtosArray.map((prod, index) => (
+                                                <div key={prod.title}>
+                                                    <h2 className="mt-4 mb-4 text-2xl">{index+1} - {prod.title}</h2>
+                                                    <a href={prod.url1} target="_blank"><img src={prod.img} alt={prod.title} /></a>
+                                                    <p className="mt-4 mb-4">{prod.p1}</p>
+                                                    <section>
+                                                        <h2 className="mt-3 mb-3 text-2xl font-bold text-green-700">Vantagens:</h2>
+                                                        <ul className="list-disc">
+                                                            {prod.benefits.map((vantagem, index) => (
+                                                                <li key={index}>{vantagem}</li>
+                                                            ))}
+                                                        </ul>
+                                                        <h2 className="mt-3 mb-3 text-2xl font-bold text-red-700">Desvantagens:</h2>
+                                                        <ul className="list-disc">
+                                                            {prod.disadvantages.map((desvantagem, index) => (
+                                                                <li key={index}>{desvantagem}</li>
+                                                            ))}
+                                                        </ul>
+                                                        <div className="flex tex-center justify-center ml-auto mr-auto">
+                                                            <a href={prod.url1} target="_blank"><button className="mt-5 mb-5 rounded-lg bg-yellow-200 w-44 h-12">Veja mais!</button></a>
+                                                        </div>
+                                                    </section>
+                                                </div>
+                                            ))}
+
+
+                                        </div>
+
+
+                                        <div>
+                                            <div className="text-left font-texts font-bold text-lg">
+                                                <p className="">{response.p2}</p>
+                                            </div>
+                                            <ul className="text-left font-texts font-bold text-lg">
+                                                <li className="mt-2 mb-2">{response.tip1}</li>
+                                                <li className="mt-2 mb-2">{response.tip2}</li>
+                                                <li className="mt-2 mb-2">{response.tip3}</li>
+                                                <li className="mt-2 mb-2">{response.tip4}</li>
+                                                <li className="mt-2 mb-2">{response.tip5}</li>
+                                                <li className="mt-2 mb-2">{response.tip6}</li>
+                                                <li className="mt-2 mb-2">{response.tip7}</li>
+                                                <li className="mt-2 mb-2">{response.tip8}</li>
+                                                <li className="mt-2 mb-2">{response.tip9}</li>
+                                                <li className="mt-2 mb-2">{response.tip10}</li>
+                                            </ul>
+                                            <div className="mt-10 mb-10 text-left font-texts font-bold text-lg">
+                                                <p className="">{response.p3}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                )
+                            }
+
+
+
+
+                        }
                         else {
                             return (
                                 <div className="w-10/12 md:w-6/12 mr-auto ml-auto border-t border-b border-gray-400" key={response.id}>
-                                    <h1 className="text-center mt-5 mb-5 text-3xl font-titles">{response.title}</h1>         
+                                    <h1 className="text-center mt-5 mb-5 text-3xl font-titles">{response.title}</h1>
                                     <div className="mt-5 text-left font-texts font-bold text-lg">
                                         <p className="">{response.p1}</p>
                                     </div>
@@ -56,7 +123,7 @@ export default function ArticlePage() {
                                         <ul className="text-left font-texts font-bold text-lg">
                                             <li className="mt-2 mb-2">{response.tip1}</li>
                                             <li className="mt-2 mb-2">{response.tip2}</li>
-                                            <li className="mt-2 mb-2">{response.tip3}</li>                   
+                                            <li className="mt-2 mb-2">{response.tip3}</li>
                                             <li className="mt-2 mb-2">{response.tip4}</li>
                                             <li className="mt-2 mb-2">{response.tip5}</li>
                                             <li className="mt-2 mb-2">{response.tip6}</li>

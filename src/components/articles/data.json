@@ -1090,6 +1090,106 @@
             "ad6": "",
             "p5": "É importante lembrar que seguir uma dieta sem glúten desnecessariamente pode ter desvantagens, como a exclusão de alimentos nutritivos e o consumo excessivo de alimentos processados sem glúten que podem ser ricos em açúcares e gorduras. Se você acha que pode ter sensibilidade ao glúten ou qualquer outra reação ao trigo, é importante conversar com um médico ou nutricionista para obter orientação adequada.",
             "p6": "Se você está pensando em remover o glúten da sua dieta com o objetivo de emagrecer, é importante lembrar que seguir uma dieta equilibrada e saudável é essencial para alcançar seus objetivos de perda de peso. Consulte um nutricionista para obter orientação personalizada e adequada para as suas necessidades."
+        },
+        {
+            "id": 43,
+            "type": "top5",
+            "title": "Top 5 Smartphones de melhor Custo-Benefício em 2024",
+            "category": "Top 5",
+            "date": "17-06-2024",
+            "img1": "https://www.estadao.com.br/recomenda/wp-content/uploads/2023/10/Samsung-Galaxy-A14_hero.jpg-e1698779204672.webp",
+            "products": {
+                "prod1": {
+                    "title":"Samsung Galaxy A54",
+                    "img":"https://m.media-amazon.com/images/I/51Dpp2KM9LL._AC_SX679_.jpg",
+                    "p1":"Um aparelho de gama média da Samsung com excelente tela Super AMOLED, bateria duradoura e câmeras versáteis, ideal para quem busca um bom desempenho geral e atualizações regulares do Android.",
+                    "url1":"https://amzn.to/3Vunj6R",
+                    "url2":"",
+                    "benefits": [
+                        "Tela Super AMOLED de 6,5 polegadas com resolução Full HD+.",
+                        "Bateria de 5000 mAh com carregamento rápido de 25W.",
+                        "Conjunto de câmeras versátil: câmera principal de 50MP, ultrawide de 12MP e macro de 5MP.",
+                        "Bom desempenho com o processador Exynos 1380.",
+                        "Interface One UI baseada no Android 13, rica em recursos e atualizações regulares."
+                    ],
+                    "disadvantages": [
+                        "Construção em plástico, que pode parecer menos premium.",
+                        "Ausência de carregamento sem fio."
+                    ]
+                },
+                "prod2": {
+                    "title":"Poco X5 Pro",
+                    "img":"https://m.media-amazon.com/images/I/61qgJ64LKuL._AC_SX679_.jpg",
+                    "p1":"Um dispositivo voltado para desempenho, com uma tela de alta taxa de atualização e carregamento rápido, perfeito para gamers e usuários exigentes que buscam um bom custo-benefício.",
+                    "url1":"https://amzn.to/3KPkFDY",
+                    "url2":"",
+                    "benefits": [
+                        "Tela AMOLED de 6,67 polegadas com taxa de atualização de 120Hz.",
+                        "Processador Snapdragon 778G, oferecendo excelente desempenho em jogos e multitarefa.",
+                        "Bateria de 5000 mAh com carregamento rápido de 67W.",
+                        "Conjunto de câmeras competente: câmera principal de 108MP, ultrawide de 8MP e macro de 2MP.",
+                        "Preço competitivo para as especificações oferecidas."
+                    ],
+                    "disadvantages": [
+                        "Interface MIUI pode ter bloatware e alguns usuários não gostam da personalização.",
+                        "Qualidade da câmera em condições de pouca luz poderia ser melhor."
+                    ]
+                },
+                "prod3": {
+                    "title":"Motorola Moto G54",
+                    "img":"https://m.media-amazon.com/images/I/51fJtGBrnQL._AC_SX679_.jpg",
+                    "p1":"Um aparelho focado em longa duração de bateria e simplicidade, com um Android quase puro, ideal para usuários que querem um smartphone confiável sem gastar muito.",
+                    "url1":"https://amzn.to/4b3d4Mt",
+                    "url2":"",
+                    "benefits": [
+                        "Excelente duração de bateria com 5000 mAh, ideal para uso prolongado.",
+                        "Tela IPS LCD de 6,5 polegadas com resolução HD+.",
+                        "Boa performance com o processador MediaTek Helio G85.",
+                        "Experiência Android quase pura, sem muitas personalizações pesadas."
+                    ],
+                    "disadvantages": [
+                        "Tela com resolução mais baixa comparada a outros modelos.",
+                        "Câmeras básicas: câmera principal de 48MP, ultrawide de 2MP e macro de 2MP."
+                    ]
+                },
+                "prod4": {
+                    "title":"Realme 10",
+                    "img":"https://m.media-amazon.com/images/I/515+nZtySaL._AC_SX569_.jpg",
+                    "p1":"Um dispositivo bem equilibrado com uma tela AMOLED de alta qualidade e uma boa bateria, ideal para usuários que buscam um design moderno e uma boa performance geral.",
+                    "url1":"https://amzn.to/3zgmNSn",
+                    "url2":"",
+                    "benefits": [
+                        "Tela Super AMOLED de 6,4 polegadas com resolução Full HD+ e taxa de atualização de 90Hz.",
+                        "Bateria de 5000 mAh com carregamento rápido de 33W.",
+                        "Processador MediaTek Helio G99, bom desempenho geral.",
+                        "Câmera principal de 50MP com boa qualidade em iluminação adequada.",
+                        "Design moderno e construção sólida."
+                    ],
+                    "disadvantages": [
+                        "Ausência de estabilização ótica na câmera.",
+                        "Interface Realme UI pode não agradar a todos."
+                    ]
+                },
+                "prod5": {
+                    "title":"Xiaomi Redmi Note 12",
+                    "img":"https://m.media-amazon.com/images/I/61FQ61igtVL._AC_SY679_.jpg",
+                    "p1":"Um smartphone com uma excelente tela AMOLED e uma boa bateria, oferecendo uma performance equilibrada e um conjunto de câmeras decente, perfeito para quem busca um bom custo-benefício.",
+                    "url1":"https://amzn.to/4c9njjN",
+                    "url2":"",
+                    "benefits": [
+                        "Tela AMOLED de 6,67 polegadas com taxa de atualização de 120Hz.",
+                        "Processador Snapdragon 4 Gen 1, eficiente e equilibrado para tarefas diárias.",
+                        "Bateria de 5000 mAh com carregamento rápido de 33W.",
+                        "Conjunto de câmeras decente: câmera principal de 48MP, ultrawide de 8MP e macro de 2MP.",
+                        "Boa relação custo-benefício, oferecendo muitas funcionalidades por um preço justo."
+                    ],
+                    "disadvantages": [
+                        "Qualidade de construção em plástico."
+                    ]
+                }
+            },
+        "p1":"A escolha do smartphone ideal vai depender muito das prioridades individuais, seja desempenho, duração da bateria, qualidade da tela ou capacidade da câmera. Estes modelos foram selecionados por oferecerem um excelente equilíbrio entre preço e especificações, atendendo bem a diferentes necessidades e preferências dos usuários."    
         }
+       
     ]
 }
