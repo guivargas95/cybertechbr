@@ -1098,6 +1098,7 @@
             "category": "Top 5",
             "date": "17-06-2024",
             "img1": "https://www.estadao.com.br/recomenda/wp-content/uploads/2023/10/Samsung-Galaxy-A14_hero.jpg-e1698779204672.webp",
+            "alt1": "teste",
             "products": {
                 "prod1": {
                     "title":"Samsung Galaxy A54",
