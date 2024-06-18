@@ -17,7 +17,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/article/:id" element={<ArticlePage />} />
+        <Route path="/article/:title/:id" element={<ArticlePage />} />
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/category/:category" element={<CategoryPage />} />
       </Routes>

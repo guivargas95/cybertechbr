@@ -14,6 +14,11 @@ export default function AllArticles({ id1, id2, id3, id4 }: iArticleId) {
         setCountArticles(countArticles + 6)
     }
 
+    function generateSlug(title: string) {
+        return title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)+/g, '');
+      }
+      
+
     return (
         <section className="mt-10">
             <article className="w-11/12 flex flex-col items-center content-center mr-auto ml-auto justify-center md:grid md:grid-cols-2 lg:grid-cols-3 lg:w-150">
@@ -24,8 +29,8 @@ export default function AllArticles({ id1, id2, id3, id4 }: iArticleId) {
                         countNumber += 1;
                         return (
                             <div className="w-80 md:w-96 mt-3 mb-3 md:mt-6 md:mb-6 md:mr-auto md:ml-auto md:h-112" key={response.id}>
-                                <Link to={`/article/${response.id}`} aria-label={`Veja mais informações sobre este artigo: ${response.title}`}><h2 className="text-xl text-left font-bold md:h-16 font-titles">{response.title}</h2></Link>
-                                <Link to={`/article/${response.id}`} aria-label={`Veja mais informações sobre este artigo: ${response.title}`}><img className="w-full h-56" src={response.type !== "top5" ? `${imgPath}/${response.img1}` : response.img1} /></Link>
+                                <Link to={`/article/${generateSlug(response.title)}/${response.id}`} aria-label={`Veja mais informações sobre este artigo: ${response.title}`}><h2 className="text-xl text-left font-bold md:h-16 font-titles">{response.title}</h2></Link>
+                                <Link to={`/article/${generateSlug(response.title)}/${response.id}`} aria-label={`Veja mais informações sobre este artigo: ${response.title}`}><img className="w-full h-56" src={response.type !== "top5" ? `${imgPath}/${response.img1}` : response.img1} /></Link>
                                 <h3 className="text-blue-800 mt-2 mb-2 font-bold">{response.category}</h3>
                                 <p className="text-left font-texts font-bold text-sm">{`${response.p1.substring(0, 300)}...`}</p>
                             </div>

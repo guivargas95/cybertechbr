@@ -22,6 +22,9 @@ export default function HighLightsArticles(props: any) {
         if (response.id === id4) { articleList?.push(response) }
     })
 
+    function generateSlug(title: string) {
+        return title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)+/g, '');
+      }
 
     return (
         <section>
@@ -29,8 +32,8 @@ export default function HighLightsArticles(props: any) {
                 {articleList?.map(response => {
                     return (
                         <div className="w-80 md:w-96 mt-3 mb-3 md:mt-1 md:mb-1 md:mr-auto md:ml-auto md:h-112" key={response.id}>
-                            <Link to={`/article/${response.id}`} aria-label={`Veja mais informações sobre este artigo: ${response.title}`}><h2 className="text-xl text-center font-bold md:h-16 font-titles">{response.title}</h2></Link>
-                            <Link to={`/article/${response.id}`} aria-label={`Veja mais informações sobre este artigo: ${response.title}`}><img className="w-full h-56" src={`${imgPath}/${response.img1}`} alt={response.alt1} /></Link>
+                            <Link to={`/article/${generateSlug(response.title)}/${response.id}`} aria-label={`Veja mais informações sobre este artigo: ${response.title}`}><h2 className="text-xl text-center font-bold md:h-16 font-titles">{response.title}</h2></Link>
+                            <Link to={`/article/${generateSlug(response.title)}/${response.id}`} aria-label={`Veja mais informações sobre este artigo: ${response.title}`}><img className="w-full h-56" src={`${imgPath}/${response.img1}`} alt={response.alt1} /></Link>
                             <h3 className="text-blue-800 mt-2 mb-2 font-bold">{response.category}</h3>
                             <p className="text-left font-texts font-bold text-sm">{`${response.p1.substring(0, 300)}...`}</p>
                         </div>

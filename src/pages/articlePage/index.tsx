@@ -10,7 +10,7 @@ import CookiePolicyBanner from "../../components/cookiePolicyBanner";
 export default function ArticlePage() {
 
     const data = Data.results
-    const { id } = useParams();
+    const { id, title } = useParams();
     const imgPath = "/img/articleImg/"
 
     return (
@@ -18,7 +18,7 @@ export default function ArticlePage() {
             <Navbar />
             <section className="mt-28">
                 {data.map(response => {
-                    if (response.id == parseInt(id || "")) {
+                    if (response.id === parseInt(id || "")) {
                         if (response.type === "article") {
                             return (
                                 <div className="w-10/12 md:w-6/12 mr-auto ml-auto border-t border-b border-gray-400" key={response.id}>
