@@ -16,7 +16,7 @@ export default function ArticlePage() {
     return (
         <div>
             <Navbar />
-            <section className="mt-48">
+            <section className="mt-28">
                 {data.map(response => {
                     if (response.id == parseInt(id || "")) {
                         if (response.type === "article") {
@@ -45,24 +45,26 @@ export default function ArticlePage() {
                                 const produtosArray = Object.values(response.products);
 
                                 return (
-                                    <div className="w-10/12 md:w-6/12 mr-auto ml-auto border-t border-b border-gray-400" key={response.id}>
-                                        <h2 className="mt-10 text-sm text-gray-400">Publicado em {response.date}</h2>
+                                    <div className="w-10/12 md:w-6/12 mr-auto ml-auto " key={response.id}>
+                                        <h2 className="mt-10 text-sm text-gray-400 border-b border-gray-400">Publicado em {response.date}</h2>
                                         <h1 className="text-center mt-5 mb-5 text-3xl font-titles">{response.title}</h1>
-                                        <div className="mt-5 text-left font-texts font-bold text-lg">
+                                        <div className="mt-5 text-left text-lg">
 
                                             {produtosArray.map((prod, index) => (
                                                 <div key={prod.title}>
-                                                    <h2 className="mt-4 mb-4 text-2xl">{index+1} - {prod.title}</h2>
-                                                    <a href={prod.url1} target="_blank"><img src={prod.img} alt={prod.title} /></a>
-                                                    <p className="mt-4 mb-4">{prod.p1}</p>
+                                                    <h2 className="mt-4 mb-4 text-2xl font-titles">{index + 1} - {prod.title}</h2>
+                                                    <div className="flex mr-auto ml-auto justify-center">
+                                                        <a href={prod.url1} target="_blank"><img src={prod.img} alt={prod.title} /></a>
+                                                    </div>
+                                                    <p className="mt-4 mb-4 font-texts">{prod.p1}</p>
                                                     <section>
-                                                        <h2 className="mt-3 mb-3 text-2xl font-bold text-green-700">Vantagens:</h2>
+                                                        <h2 className="mt-3 mb-3 text-2xl font-bold text-green-700 font-titles">Principais vantagens:</h2>
                                                         <ul className="list-disc">
                                                             {prod.benefits.map((vantagem, index) => (
                                                                 <li key={index}>{vantagem}</li>
                                                             ))}
                                                         </ul>
-                                                        <h2 className="mt-3 mb-3 text-2xl font-bold text-red-700">Desvantagens:</h2>
+                                                        <h2 className="mt-3 mb-3 text-2xl font-bold text-red-700 font-titles">Desvantagens:</h2>
                                                         <ul className="list-disc">
                                                             {prod.disadvantages.map((desvantagem, index) => (
                                                                 <li key={index}>{desvantagem}</li>
